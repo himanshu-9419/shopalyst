@@ -1,0 +1,220 @@
+body,html{
+    height:100%; width:100%; margin:0px; padding:0px;
+}
+.salePrice{
+    text-decoration: line-through;
+}
+.offerPrice{
+    font-weight: bold;
+}
+.item{
+    float:left;
+    width:25%;
+    height:33%;
+}
+.item img{
+    max-width:90%;
+    max-height:70%;
+}
+.listItem{
+    width:100%;
+    height:40%;
+}
+.listItemTitle{
+    height:60%;
+    width:70%;
+    float: right;
+}
+.listItem a div{
+    display: inline-block;
+}
+.listItem img{
+    max-width:30%;
+    max-height:100%;
+    float: left;
+}
+.container{
+    height:100%; width:80%; float:right;
+}
+.filterSection{
+    height:100%; width:20%; float:left;
+}
+.itemTitle{
+    height:10%;
+    width:100%;
+}
+.itemTitle p{
+    height:100%;
+    width:100%;
+   white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchAndFilter > div{
+    display: inline-block;
+}
+.overlay-content> img{
+    max-width:100%;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+#myNav{
+    width:100%;
+}
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* list and grid view button css*/
+body {
+  background: #16a085;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.list-grid-toggle {
+  width: 40px;
+  height: 40px;
+  
+  background: #14937a;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #12806a;
+  text-transform: uppercase;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.list-grid-toggle:hover {
+  padding: 30px;
+  background: #149078;
+}
+.list-grid-toggle .label {
+  display: none;
+}
+
+.icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-bar {
+  position: relative;
+  width: 40px;
+  height: 10px;
+  margin: 0 auto 5px auto;
+  background: #ecf0f1;
+  box-shadow: 2px 2px 4px #12806a;
+  transition: all 0.15s ease;
+}
+.icon-bar:last-child {
+  margin-bottom: 0;
+}
+.icon-bar:before, .icon-bar:after {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ecf0f1;
+  box-shadow: 2px 2px 4px #12806a;
+  content: '';
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+.icon-bar:before {
+  left: -15px;
+}
+.icon-bar:after {
+  right: -15px;
+}
+
+.icon-grid .icon-bar {
+  width: 10px;
+}
+.icon-grid .icon-bar:before, .icon-grid .icon-bar:after {
+  opacity: 1;
+}
+.icon-grid .icon-bar:before {
+  left: 0;
+  transform: translateX(-15px);
+}
+.icon-grid .icon-bar:after {
+  right: 0;
+  transform: translateX(15px);
+}
+
+
+#otherFilters > ul{
+    margin-left:25px;
+}
+#otherFilters > ul > li > ul{
+    margin-left:25px;
+}
+.active .arrow{
+    transform:rotate(90deg);
+}
+
+select{
+    display:block;
+}
+#sort{height: 30px;
+    width: 100px;
+}
+ul li ul li{
+    color:black !important
+}
